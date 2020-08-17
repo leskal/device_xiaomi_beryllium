@@ -2,7 +2,7 @@
   {
     "repository": "device_xiaomi_sdm845-common",
     "target_path": "device/xiaomi/sdm845-common",
-    "branch": "ten"
+    "branch": "ten-plus"
   },
   {
     "repository": "PixelExperience-Devices/kernel_xiaomi_beryllium",
@@ -24,6 +24,12 @@
   {
     "repository": "vendor_xiaomi_beryllium",
     "target_path": "vendor/xiaomi/beryllium",
+    "branch": "ten",
+    "remote": "pixel-devices-bitbucket"
+  },
+  {
+    "repository": "vendor_xiaomi-firmware",
+    "target_path": "vendor/xiaomi-firmware",
     "branch": "ten",
     "remote": "pixel-devices-bitbucket"
   }

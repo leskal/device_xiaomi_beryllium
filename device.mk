@@ -8,7 +8,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/beryllium/beryllium-vendor.mk)
+$(call inherit-product, vendor/xiaomi/beryllium/beryllium-vendor.mk)
 
 # Firmware
 $(call inherit-product, vendor/xiaomi-firmware/beryllium/firmware.mk)
@@ -64,7 +64,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qdcm_calib_data_tianma_fhd_video_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_tianma_fhd_video_dsi_panel.xml
 
 # GoogleCamera
-$(call inherit-product, packages/apps/GoogleCameraMod/xiaomi-sdm845/config.mk)
+$(call inherit-product-if-exists, packages/apps/GoogleCameraMod/xiaomi-sdm845/config.mk)
 
 # Fingerprint
 PRODUCT_PACKAGES += \
